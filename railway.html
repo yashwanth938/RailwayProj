@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Railway Ticket Registration</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("train1.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #9199b79e;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input[type="text"],
+      input[type="number"],
+      select {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Enter Your Details to Book Tickets</h2>
+      <form action="confirmation.html">
+        <input type="text" name="firstName" placeholder="First Name" required />
+        <input type="text" name="lastName" placeholder="Last Name" required />
+        <input
+          type="number"
+          name="mobile"
+          placeholder="Mobile Number"
+          required
+        />
+        <select name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <input
+          type="number"
+          name="aadhar"
+          placeholder="Aadhar Number"
+          required
+        />
+        <select name="martialStatus" required>
+          <option value="">Select Martial Status</option>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorced">Divorced</option>
+          <option value="widowed">Widowed</option>
+        </select>
+        <select name="destination" required>
+          <option value="">Select Destination</option>
+          <option value="vizag-to-tirupathi">Vizag to Tirupathi</option>
+          <option value="vizag-to-kadapa">Vizag to Kadapa</option>
+          <option value="vizag-to-tamil-nadu">Vizag to Tamil Nadu</option>
+        </select>
+        <select name="berthPreference" required>
+          <option value="">Select Berth Preference</option>
+          <option value="lower">Lower</option>
+          <option value="middle">Middle</option>
+          <option value="upper">Upper</option>
+        </select>
+        <select name="Booking Type" required>
+          <option value="">Select Booking Type</option>
+          <option value="lower">ONLINE</option>
+          <option value="middle">OFFLINE</option>
+        </select>
+        <input type="submit" value="Book Tickets" />
+      </form>
+    </div>
+  </body>
+</html>
